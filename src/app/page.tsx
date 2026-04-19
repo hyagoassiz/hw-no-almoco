@@ -29,8 +29,8 @@ export default function Home() {
       <Container maxWidth="sm">
         {/* Header */}
         <Box sx={{ mb: 4 }}>
-          <Typography variant="h4" fontWeight="bold" sx={{ color: "#fff" }}>
-            🚗 Hot Wheels no Almoço
+          <Typography variant="h4" sx={{ color: "#fff", fontWeight: "bold" }}>
+            Hot Wheels no Almoço
           </Typography>
 
           <Typography sx={{ color: "#94a3b8", mt: 1 }}>
@@ -39,7 +39,7 @@ export default function Home() {
         </Box>
 
         {/* Lista */}
-        <Box display="flex" flexDirection="column" gap={3}>
+        <Box sx={{ display: "flex", flexDirection: "column", gap: 3 }}>
           {produtos.map((produto) => (
             <Card
               key={produto.nome}
@@ -63,8 +63,7 @@ export default function Home() {
               <CardContent>
                 <Typography
                   variant="h6"
-                  fontWeight="bold"
-                  sx={{ color: "#fff" }}
+                  sx={{ color: "#fff", fontWeight: "bold" }}
                 >
                   {produto.nome}
                 </Typography>
